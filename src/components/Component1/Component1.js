@@ -1,4 +1,4 @@
-import useAppContext from '../context/useAppContext'
+import useAppContext from '../../context/useAppContext'
 
 const Component1 = () => {
   const { dummyText, handleDummyText } = useAppContext()

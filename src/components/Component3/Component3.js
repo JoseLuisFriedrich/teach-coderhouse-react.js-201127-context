@@ -1,9 +1,7 @@
-import useAppContext from '../context/useAppContext'
+import useAppContext from '../../context/useAppContext'
 
 const Component3 = () => {
   const { dummyObject, handleDummyObject } = useAppContext()
-
-  console.log(dummyObject)
 
   const handleBoth = () => {
     // handleDummyObject('firstName', 'Adrain')

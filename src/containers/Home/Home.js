@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { getProducts } from '../../db/fakedb'
-import ItemList from '../ItemList/ItemList'
+import ItemList from '../../components/ItemList/ItemList'
 
 const Home = () => {
   const [products, setProducts] = useState([])

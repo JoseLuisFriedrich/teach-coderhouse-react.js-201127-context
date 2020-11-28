@@ -1,4 +1,4 @@
-import useAppContext from '../context/useAppContext'
+import useAppContext from '../../context/useAppContext'
 
 const Component2 = () => {
   const { dummyArray, handleDummyArray } = useAppContext()
@@ -12,7 +12,9 @@ const Component2 = () => {
     <div id='Component1'>
       <h2>
         {dummyArray.map((entry) => (
-          <h2>{entry}</h2>
+          <div key={entry}>
+            <h2>{entry}</h2>
+          </div>
         ))}
       </h2>
 

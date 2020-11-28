@@ -1,13 +1,11 @@
-import { useEffect, useState } from 'react'
 import './App.css'
 import Home from './containers/Home/Home'
-import { getProductById, getProducts } from './db/fakedb'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import ItemDetailContainer from './containers/ItemDetailContainer/ItemDetailContainer'
 import { AppProvider } from './context/useAppContext'
-import Component1 from './Components/Component1'
-import Component2 from './Components/Component2'
-import Component3 from './Components/Component3'
+import Component1 from './components/Component1/Component1'
+import Component2 from './components/Component2/Component2'
+import Component3 from './components/Component3/Component3'
 
 // const ItemCount = ({inicit, min, max, onAdd}) => {
 //   const [count, setCount] = useState(0)
