@@ -1,25 +1,73 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect, useState } from 'react'
+import './App.css'
+import Home from './containers/Home/Home'
+import { getProductById, getProducts } from './db/fakedb'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import ItemDetailContainer from './containers/ItemDetailContainer/ItemDetailContainer'
+import { AppProvider } from './context/useAppContext'
+import Component1 from './Components/Component1'
+import Component2 from './Components/Component2'
+import Component3 from './Components/Component3'
+
+// const ItemCount = ({inicit, min, max, onAdd}) => {
+//   const [count, setCount] = useState(0)
+
+//   const increment = () => {
+//     setCount(count+1)
+//     onAdd(count+1)
+//   }
+
+//   return (
+//     <div id='App'>
+//       <h2>App</h2>
+//       {/* <button></button> */}
+//     </div>
+//   )
+// }
+
+// const ItemDetail = ({product}) => {
+//   //
+//   const counterHandler = (counter) => {
+//     console.log(counter)
+//   }
+
+//   return (
+//     <div id='App'>
+//       <h2>App</h2>
+//       <ItemCount onAdd={counterHandler} />
+//       <button  ></button>
+
+//     </div>
+//   )
+// }
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <AppProvider>
+        <Component3 />
+        <Component2 />
+        <Component1 />
+
+        <BrowserRouter>
+          {/* <NavBar /> */}
+          <Switch>
+            <Route exact path='/'>
+              <Home />
+            </Route>
+            <Route exact path='/Cart'>
+              {/* <Cart /> */}
+            </Route>
+            <Route exact path='/detalleitem/:id'>
+              <ItemDetailContainer />
+            </Route>
+          </Switch>
+
+          {/* <Footer /> */}
+        </BrowserRouter>
+      </AppProvider>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

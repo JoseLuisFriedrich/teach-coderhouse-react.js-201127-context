@@ -11,5 +11,9 @@
   ],
   "profile": {
     "name": "typicode"
+  },
+  "getProduct": {
+    "name": "prueba",
+    "apellido": "test 04"
   }
 }
