@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+https://youtu.be/lu5lq7P-G-k
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![José Luis Friedrich](https://img.youtube.com/vi/lu5lq7P-G-k/0.jpg)](https://youtu.be/lu5lq7P-G-k)
 
-## Available Scripts
+# useContext, Consultas generales
 
-In the project directory, you can run:
+// 00:00:00 ✔️ Liberías para darle estilo al sitio (Boostrap, Material UI, Styled Components, SCSS, Font-Awesome)
 
-### `npm start`
+// 00:07:00 ✔️ Repaso de promesas y filtrar elemento de array de productos.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+// 00:15:00 ✔️ Resolviendo problema de utilización de la api https://my-json-server.typicode.com/ para hacer una fake api con datos propios
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+// 00:24:00 ✔️ Link to a cada producto para hacer la redirección al detalle correspondiente, BrowserRouter
 
-### `npm test`
+//          💩 (sólo Home e ItemDetailContainer van en /containers. El resto en /components, no hacer como yo que metí todo en containers)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+//          👀 (lo acomodé en mi GitHub)
 
-### `npm run build`
+// 00:50:00 ✔️ Explicación del desafío de useContext, props de evento para tener el botón comprar en ItemDetail y recibir el counter de ItemCount
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+// 00:57:00 ✔️ creación de context, useContext con useState Texto, consumir contexto
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+// 01:08:00 ✔️ El custom hook más sencillo del mundo para simplificar el consumo de AppContext en componentes. Creando "useAppContext"
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+// 01:22:00 ✔️ useContext con useState Texto, implementación de función para setear Texto
 
-### `npm run eject`
+// 01:26:00 💪 useContext con useState Array, implementación de función para setear Array (¡importante!)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+// 01:33:00 ✔️ useContext con useState Object, implementación de función para setear Object
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+///////////
 
-## Learn More
+// Extra //
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+///////////
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+// 01:46:00 💪 Functional Updates -> Seteando states Array y Object como un "pro react developer"
 
-### Analyzing the Bundle Size
+// 01:57:00 ✔️ Cómo se implementaría un array de objetos para agregar varios objetos a una lista
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+//          👀 (En 02:02:00) copié handleDummyObject, pero tenía que copiar handleDummyArrayObject
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+// 02:03:00 🍺 Cómo consumir api de Twitter con Python y cómo podría implementarse en JavaScript
