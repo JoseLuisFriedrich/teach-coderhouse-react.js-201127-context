@@ -70,6 +70,10 @@ function App() {
 
 export default App
 
+/////////////
+// CONTEXT //
+/////////////
+
 // 00:00:00 ✔️ Liberías para darle estilo al sitio (Boostrap, Material UI, Styled Components, SCSS, Font-Awesome)
 // 00:07:00 ✔️ Repaso de promesas y filtrar elemento de array de productos.
 // 00:15:00 ✔️ Resolviendo problema de utilización de la api https://my-json-server.typicode.com/ para hacer una fake api con datos propios
@@ -83,9 +87,9 @@ export default App
 // 01:26:00 💪 useContext con useState Array, implementación de función para setear Array (¡importante!)
 // 01:33:00 ✔️ useContext con useState Object, implementación de función para setear Object
 
-///////////
-// Extra //
-///////////
+/////////////////
+// EXTRA CLASS //
+/////////////////
 
 // 01:46:00 💪 Functional Updates -> Seteando states Array y Object como un "pro react developer"
 // 01:57:00 ✔️ Cómo se implementaría un array de objetos para agregar varios objetos a una lista
